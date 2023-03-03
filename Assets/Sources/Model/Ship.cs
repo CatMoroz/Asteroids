@@ -6,7 +6,7 @@ namespace Asteroids.Model
     public class Ship : Transformable
     {
         public Ship(Vector2 position, float rotation) : base(position, rotation) { }
-
+        public int Health { get; set; }
         public void MoveLooped(Vector2 delta)
         {
             var nextPosition = Position + delta;

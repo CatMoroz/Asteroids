@@ -26,7 +26,6 @@ namespace Asteroids.Model
                 throw new InvalidOperationException(nameof(direction));
 
             direction = direction > 0 ? 1 : -1;
-
             _ship.Rotate(direction * deltaTime * _degreesPerSecond);
         }
     }
